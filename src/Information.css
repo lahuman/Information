@@ -1,0 +1,379 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    height: auto;
+    min-height: 100%;
+    position: relative;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container-layout {
+    position: relative;
+    flex: 1 1;
+    max-width: 100%;
+}
+
+
+.layout-cell {
+    text-align: center;
+    background-color: transparent !important;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    background-clip: padding-box;
+    background-origin: padding-box;
+}
+
+.size-30 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+
+
+.section {
+    min-height: 520px;
+}
+
+
+.section .container-layout-1 {
+    padding: 133px 30px 30px;
+}
+
+
+.section .layout-cell {
+    min-height: 520px;
+    background-image: none;
+}
+
+.section .text-1 {
+    font-size: 3.75rem;
+    font-family: "Archivo Black";
+    text-transform: none;
+    margin: 0 12px;
+}
+
+.section .text-2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 20px 0 0;
+}
+
+.section .btn-1 {
+    border-style: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    background-image: none;
+    box-shadow: 2px 5px 0px 0 rgba(41, 43, 51, 0.4);
+    margin: 35px auto 0;
+    padding: 18px 65px 19px;
+}
+
+.section .u-layout-cell-2 {
+    min-height: 520px;
+    background-image: none;
+}
+
+.section .u-container-layout-2 {
+    padding: 133px 30px 30px;
+}
+
+.section .u-text-3 {
+    font-size: 3.75rem;
+    font-family: "Archivo Black";
+    text-transform: none;
+    margin: 0 12px;
+}
+
+.section .u-text-4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 20px 0 0;
+}
+
+.section .u-btn-2 {
+    border-style: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    background-image: none;
+    box-shadow: 2px 5px 0px 0 rgba(116, 71, 86, 0.4);
+    margin: 35px auto 0;
+    padding: 18px 65px 19px;
+}
+
+@media (max-width: 1199px) {
+    .section {
+        min-height: 429px;
+    }
+
+    .section .layout-cell {
+        min-height: 429px;
+    }
+
+    .section .container-layout-1 {
+        padding-top: 90px;
+    }
+
+    .section .text-1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .section {
+        min-height: 350px;
+    }
+
+    .section .layout-cell {
+        min-height: 350px;
+    }
+
+    .section .container-layout-1 {
+        padding-top: 65px;
+        padding-bottom: 40px;
+    }
+
+    .section .text-1 {
+        font-size: 2.25rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .section {
+        min-height: 450px;
+    }
+
+    .section .layout-cell {
+        min-height: 100px;
+    }
+
+    .section .container-layout-1 {
+        padding: 60px 40px 30px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .section .container-layout-1 {
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .section .text-1 {
+        font-size: 1.875rem;
+    }
+
+}
+
+
+.layout-row>* {
+    display: flex;
+}
+
+.layout-row {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.layout-row>* {
+    max-height: 100%;
+    min-height: -webkit-fit-content;
+    min-height: fit-content;
+}
+
+@media (max-width: 767px) {
+    .layout-row>* {
+        min-width: 100%;
+    }
+}
+
+.layout-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+
+.text:not(ul):not(ol):not(p) a {
+    color: inherit;
+}
+
+.text:not(ul):not(ol):not(p) a,
+.text:not(ul):not(ol):not(p) a:hover {
+    text-decoration: none;
+}
+
+
+
+
+.btn {
+    /*display: inline-block;*/
+    display: table;
+    /*TODO maye need another solution for negative marin*/
+    cursor: pointer;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    border: 0 none transparent;
+    outline-width: 0;
+    background-color: transparent;
+    margin: 0;
+    -webkit-text-decoration-skip: objects;
+    font-style: initial;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 0;
+    align-self: flex-start;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn:hover,
+.btn:focus {
+    text-decoration: none;
+}
+
+.btn:active,
+.btn.active {
+    outline: 0;
+    background-image: none;
+}
+
+.btn.disabled,
+.btn[disabled] {
+    opacity: 0.6;
+}
+
+.btn-circle {
+    border-radius: 50%;
+}
+
+.btn-round {
+    border-radius: 4px;
+}
+
+.btn-rectangle {
+    border-radius: 0 !important;
+}
+
+.radius-50,
+.radius-50:before,
+.radius-50 {
+    border-radius: 50px !important;
+}
+
+.hover-palette-3-light-3:hover,
+.hover-palette-3-light-3[class*="u-border-"]:hover,
+.hover-palette-3-light-3:focus,
+.hover-palette-3-light-3[class*="u-border-"]:focus,
+.u-active-palette-3-light-3.u-active.u-active,
+.u-active-palette-3-light-3[class*="u-border-"].u-active.u-active,
+a.u-button-style.hover-palette-3-light-3:hover,
+a.u-button-style.hover-palette-3-light-3[class*="u-border-"]:hover,
+a.u-button-style.hover-palette-3-light-3:focus,
+a.u-button-style.hover-palette-3-light-3[class*="u-border-"]:focus,
+a.u-button-style.u-button-style.u-active-palette-3-light-3:active,
+a.u-button-style.u-button-style.u-active-palette-3-light-3[class*="u-border-"]:active,
+a.u-button-style.u-button-style.u-active-palette-3-light-3.active,
+a.u-button-style.u-button-style.u-active-palette-3-light-3[class*="u-border-"].active,
+li.active>a.u-button-style.u-button-style.u-active-palette-3-light-3,
+li.active>a.u-button-style.u-button-style.u-active-palette-3-light-3[class*="u-border-"] {
+    color: #111111 !important;
+    background-color: #feebf1 !important;
+}
+
+a.link.hover-palette-3-light-3:hover {
+    color: #feebf1 !important;
+}
+
+.grey-80,
+.u-body.grey-80,
+.u-container-style.grey-80:before,
+.u-table-alt-grey-80 tr:nth-child(even) {
+  color: #ffffff;
+  background-color: #333333;
+}
+.u-button-style.grey-80,
+.u-button-style.grey-80[class*="u-border-"] {
+  color: #ffffff !important;
+  background-color: #333333 !important;
+}
+.u-button-style.grey-80:hover,
+.u-button-style.grey-80[class*="u-border-"]:hover,
+.u-button-style.grey-80:focus,
+.u-button-style.grey-80[class*="u-border-"]:focus,
+.u-button-style.u-button-style.grey-80:active,
+.u-button-style.u-button-style.grey-80[class*="u-border-"]:active,
+.u-button-style.u-button-style.grey-80.active,
+.u-button-style.u-button-style.grey-80[class*="u-border-"].active,
+li.active > .u-button-style.u-button-style.grey-80,
+li.active > .u-button-style.u-button-style.grey-80[class*="u-border-"] {
+  color: #ffffff !important;
+  background-color: #2e2e2e !important;
+}
+
+
+
+.backlink {
+  position: relative;
+  text-align: center;
+  padding: 1em;
+}
+.backlink a:first-letter {
+  text-transform: capitalize;
+}
+.backlink a,
+.backlink p {
+  display: inline-block;
+}
+.backlink span {
+  font-size: 0.8rem;
+}
+.backlink .link {
+  text-decoration: underline;
+}
+.backlink span,
+.backlink .link:hover {
+  text-decoration: none;
+}
