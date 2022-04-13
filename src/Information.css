@@ -1,15 +1,12 @@
-html {
+html, body, #root  {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-}
-
-body {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.6;
-    height: auto;
-    min-height: 100%;
-    position: relative;
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%;
+    min-width: 580px;
+    min-height: 350px;
 }
 
 .clearfix:after,
@@ -31,10 +28,8 @@ body {
 
 .layout-cell {
     text-align: center;
-    background-color: transparent !important;
     opacity: 1;
     position: relative;
-    display: flex;
     background-clip: padding-box;
     background-origin: padding-box;
 }
@@ -44,21 +39,20 @@ body {
     max-width: 50%;
 }
 
-
-
 .section {
-    min-height: 520px;
-}
-
-
-.section .container-layout-1 {
-    padding: 133px 30px 30px;
+    height: 90%; 
+    width:100%; 
+    top: 0px;
+    display: table;
 }
 
 
 .section .layout-cell {
-    min-height: 520px;
     background-image: none;
+    display:table-cell;
+    vertical-align:middle;
+    width: 50%;
+    height: 100%;
 }
 
 .section .text-1 {
@@ -87,7 +81,6 @@ body {
 }
 
 .section .u-layout-cell-2 {
-    min-height: 520px;
     background-image: none;
 }
 
@@ -120,94 +113,10 @@ body {
     padding: 18px 65px 19px;
 }
 
-@media (max-width: 1199px) {
-    .section {
-        min-height: 429px;
-    }
-
-    .section .layout-cell {
-        min-height: 429px;
-    }
-
-    .section .container-layout-1 {
-        padding-top: 90px;
-    }
-
-    .section .text-1 {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-}
-
-@media (max-width: 991px) {
-    .section {
-        min-height: 350px;
-    }
-
-    .section .layout-cell {
-        min-height: 350px;
-    }
-
-    .section .container-layout-1 {
-        padding-top: 65px;
-        padding-bottom: 40px;
-    }
-
-    .section .text-1 {
-        font-size: 2.25rem;
-    }
-
-}
-
-@media (max-width: 767px) {
-    .section {
-        min-height: 450px;
-    }
-
-    .section .layout-cell {
-        min-height: 100px;
-    }
-
-    .section .container-layout-1 {
-        padding: 60px 40px 30px;
-    }
-
-}
-
-@media (max-width: 575px) {
-    .section .container-layout-1 {
-        padding-top: 30px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .section .text-1 {
-        font-size: 1.875rem;
-    }
-
-}
-
-
-.layout-row>* {
-    display: flex;
-}
-
 .layout-row {
-    display: flex;
-    flex: 1 1 100%;
-}
-
-.layout-row>* {
-    max-height: 100%;
-    min-height: -webkit-fit-content;
-    min-height: fit-content;
-}
-
-@media (max-width: 767px) {
-    .layout-row>* {
-        min-width: 100%;
-    }
+    display : table-row;
+    height: 100%;
+    width: 100%;
 }
 
 .layout-row {
@@ -231,7 +140,6 @@ body {
 
 
 .btn {
-    /*display: inline-block;*/
     display: table;
     /*TODO maye need another solution for negative marin*/
     cursor: pointer;
@@ -356,16 +264,22 @@ li.active > .u-button-style.u-button-style.grey-80[class*="u-border-"] {
 
 
 .backlink {
+  height: 10%;
+  width: 100%;
   position: relative;
   text-align: center;
-  padding: 1em;
+  vertical-align: middle;
+  display:table;
 }
 .backlink a:first-letter {
   text-transform: capitalize;
 }
 .backlink a,
 .backlink p {
-  display: inline-block;
+  display:table-cell;
+  vertical-align:middle;
+  width: 50%;
+  height: 100%;
 }
 .backlink span {
   font-size: 0.8rem;
@@ -376,4 +290,9 @@ li.active > .u-button-style.u-button-style.grey-80[class*="u-border-"] {
 .backlink span,
 .backlink .link:hover {
   text-decoration: none;
+}
+
+.text {
+    vertical-align:middle;
+    display: table-cell;
 }

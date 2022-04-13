@@ -13,7 +13,7 @@ function App() {
       </section>
       <footer class="backlink clearfix grey-80">
         <p class="text">
-          <span>ⓒ Digital IT Group. All Rights Reserved.</span>
+          <span>ⓒ 디지털IT그룹. All Rights Reserved.</span>
         </p>
       </footer>
 
